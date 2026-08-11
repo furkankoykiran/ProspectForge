@@ -31,10 +31,10 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
-    "@nuxt/image": "^2.0.0",
-    "@tailwindcss/vite": "^4.3.2",
-    "better-sqlite3": "^13.0.1",
-    "nuxt": "^4.4.8",
+    "@nuxt/image": "^2.1.0",
+    "@tailwindcss/vite": "^4.3.3",
+    "better-sqlite3": "^13.0.3",
+    "nuxt": "^4.5.2",
     "tailwindcss": "^4.3.2",
     "vue": "^3.5.38",
     "vue-router": "^5.1.0"
@@ -46,6 +46,6 @@
     "eslint": "^10.8.1",
     "typescript": "^5.6.0",
     "vitest": "^4.1.10",
-    "vue-tsc": "^3.3.7"
+    "vue-tsc": "^3.3.9"
   }
 }
