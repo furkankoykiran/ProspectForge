@@ -1,0 +1,43 @@
+name: Feature request
+description: Suggest an improvement or a new capability
+labels: ['enhancement']
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ProspectForge is deliberately small: a single-user, fully local tool for
+        working one area on foot. Proposals that fit that shape are much more
+        likely to land than ones that push it toward a multi-tenant SaaS.
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem does this solve?
+      description: Describe the situation you hit, not the solution you have in mind.
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: What would you like to happen?
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives you have considered
+
+  - type: dropdown
+    id: cost
+    attributes:
+      label: Does this change how many paid API calls the app makes?
+      description: Discovery and generation are the two operations that cost money.
+      options:
+        - 'No'
+        - 'Yes — it would increase them'
+        - 'Yes — it would reduce them'
+        - Not sure
+    validations:
+      required: true
