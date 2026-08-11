@@ -1,0 +1,19 @@
+node_modules
+.nuxt
+.output
+dist
+.env
+.env.*
+!.env.example
+data
+
+# Test and tooling output
+coverage
+*.tsbuildinfo
+.eslintcache
+
+# Editor and OS noise
+.DS_Store
+Thumbs.db
+.idea
+*.swp

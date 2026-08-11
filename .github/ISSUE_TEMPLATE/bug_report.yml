@@ -1,0 +1,71 @@
+name: Bug report
+description: Something behaves differently than you expected
+labels: ['bug']
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for the report.
+
+        **Never paste API keys, and redact business or customer data that is not
+        yours to share.** Screenshots of the app often contain both.
+
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: What did you expect, and what did you get instead?
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Go to '...'
+        2. Click '...'
+        3. See error
+    validations:
+      required: true
+
+  - type: dropdown
+    id: area
+    attributes:
+      label: Which part of the app?
+      options:
+        - Discovery (Google Places)
+        - AI generation (Gemini)
+        - Map view
+        - Business list or detail
+        - Local database / data loss
+        - Build, install or tooling
+        - Something else
+    validations:
+      required: true
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Relevant output
+      description: Terminal output or browser console errors. Redact any keys.
+      render: shell
+
+  - type: input
+    id: node-version
+    attributes:
+      label: Node version
+      description: Output of `node -v`
+      placeholder: v22.12.0
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Before submitting
+      options:
+        - label: I searched existing issues for a duplicate.
+          required: true
+        - label: This report contains no API keys or secrets.
+          required: true
