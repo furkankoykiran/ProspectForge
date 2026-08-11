@@ -1,0 +1,24 @@
+{
+  // Nuxt's generated project references cover app/, server/ and shared/ only,
+  // so `vue-tsc --noEmit` against the root tsconfig silently skips the test
+  // suite. This standalone project brings test/ and the tooling config under
+  // the same typecheck; `npm run typecheck` runs both.
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "verbatimModuleSyntax": true,
+    "strict": true,
+    "noUncheckedIndexedAccess": true,
+    "noEmit": true,
+    "skipLibCheck": true,
+    "types": ["node"],
+    "baseUrl": ".",
+    "paths": {
+      "#shared/*": ["./shared/*"]
+    }
+  },
+  "include": ["test/**/*.ts", "vitest.config.ts"]
+}
